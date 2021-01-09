@@ -1,0 +1,117 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 90em;
+    font-family: sans-serif;
+}
+
+.hero{
+    background-image: url(https://i.redd.it/9zuxso9q4tf31.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+}
+
+p{
+    color: white;
+    font-size: 18px;
+}
+
+.sizer{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.nav-wrapper{
+    background-color: #1b1b1b;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4em;
+}
+
+nav,ul,.logo{
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.logo{
+    background-color: #fa7d09;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 0 2em;
+    height: 100%;
+    position: absolute;
+    left: 5em;
+    z-index: 99;
+}
+
+.logo .text{
+    display: inline-block;
+}
+
+nav{
+    color:  #fdb009;
+    padding-left: 15em;
+    vertical-align: middle;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0 1em;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 1em;
+    font-size: 19px;
+}
+
+.sub-nav{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    margin-top: 4em;
+    padding-left: 0;
+    background-color: white;
+    color: #222;
+    width: 100%;
+    height: 4em;
+    transition: margin-top 0.5s ease-in, padding-left 0.5s  ease-in;
+}
+
+.sub-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.sub-nav li{
+    display: inline-block;
+    padding: 0 1em;
+    box-sizing: border-box;
+    font-size: 19px;
+}
+
+.sub-nav.active{
+    margin-top: 0;
+    padding-left: 15em;
+}
+
+.para{
+    color: #333;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
