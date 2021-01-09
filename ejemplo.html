@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ejemplo.css">
+    
+</head>
+<body>
+    
+    <div class="nav-wrapper">
+        <div class="sizer"></div>
+            <div class="logo">
+                <div class="sizer"></div>
+                <div class="text">Trigger</div>
+    </div>
+        
+            <nav>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Galeria</li>
+                    <li>Nosotros</li>
+                    <li>Nuestro equipo</li>
+                    
+                </ul>
+            </nav>
+
+            <div class="sub-nav" id="foo">
+                <div class="sizer"></div>
+                    <ul>
+                        <li>preguntas</li>
+                        <li>servicios</li>
+                        <li>Juegos</li>
+                        <li>soporte 24/7</li>
+                        <li>Llamanos</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        <section class="hero"></section>
+        <p class="para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates facere ea dolorum quis id! Cumque assumenda vel dolorem dignissimos cupiditate alias cum, nesciunt odit iste quisquam velit eveniet atque omnis, necessitatibus hic quidem obcaecati enim recusandae. Dignissimos ipsam veritatis beatae ipsum fuga laboriosam in excepturi. Quibusdam sapiente eveniet officia doloribus asperiores reprehenderit molestias ipsa, nam distinctio perspiciatis illo sit nobis provident non quos. Tempore vitae sunt, praesentium alias aliquid libero!
+
+        </p>
+        <script>
+            window.addEventListener('scroll', function (ev) {
+                var d = document.documentElement.scrollTop;
+                var subNav = document.getElementById('foo');
+                if (d > 10) {
+                    subNav.classList.add('active')
+                    return;
+                }
+                else{
+                    subNav.classList.remove('active')
+                    return;
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>
